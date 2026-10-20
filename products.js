@@ -5,6 +5,12 @@ const products = [
   { name: "Pen drive", price: 450 }
 ];
 
+const phrase = products.map(function({name , price}){
+  return `${name} costs ${price}`;
+});
+
+console.log(phrase);
+
 const cheap = products.filter(function(product){
     return product.price < 1000;
 });
